@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.left {
+  flex: 1;
+  background: white;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.text {
+  color: gray;
+  margin-bottom: 30px;
+}
+
+.left label {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.left input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.forgot {
+  color: #6c4ce4;
+  cursor: pointer;
+}
+
+.left button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #6c4ce4;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.googleBtn {
+  background: white !important;
+  color: black !important;
+  border: 1px solid #ccc !important;
+}
+
+.bottomText {
+  text-align: center;
+}
+
+.bottomText span {
+  color: #6c4ce4;
+  cursor: pointer;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.right {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.rightImage {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.85) contrast(0.95);
+}
+
+.rightImage::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.12), rgba(0,0,0,0.35));
+}

@@ -1,0 +1,37 @@
+.background {
+  width: 100%;
+  min-height: 400px;
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 250px;
+  padding: 25px;
+  background: white;
+  border-radius: 15px;
+  text-align: center;
+}
+
+
+.card h3 {
+  color: #6c4ce4;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #555;
+}
